@@ -1,0 +1,17 @@
+<table class="table table-hover table-dark">
+  <tbody *ngFor="let paciente of pacientesAgr">
+    <tr>
+      <th scope="col">{{paciente.nombre}}</th>
+      <th scope="col">{{paciente.apellido}}</th>
+      <th scope="col">{{paciente.tipodocumento}}</th>
+      <th scope="col">{{paciente.iddocumento}}</th>
+      <th scope="col">{{paciente.genero}}</th>
+      <th scope="col">{{paciente.edad}}</th>
+      <th scope="col">{{paciente.tratamiento}}</th>
+      <th scope="col">{{paciente.email}}</th>
+      <th scope="col">
+        <a class= "btn btn-danger " (click)="onDelete(paciente)">Delete</a></th>
+      
+    </tr>
+  </tbody>
+</table>
